@@ -1,0 +1,22 @@
+.container {
+    background-color: black;
+    background-image: url("../img/background1.PNG");
+    background-position-x: center;
+    background-position-y: 250px;
+    background-repeat: no-repeat;        
+    background-size: contain;
+}
+
+.services-and-workout, .simulators {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: rgba(71, 60, 133, 0.2);
+    text-align: center;
+    
+}
+
+.services-and-workout-name, .simulators-name {
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+}
