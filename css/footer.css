@@ -1,0 +1,64 @@
+.main-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: linear-gradient(340deg, rgba(255,0,0,0),rgba(255,0,0,.8), rgba(255,0,0,0) 80%);
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    font-size: 26px;
+    line-height: 30px;
+}
+
+.working-mode-head, .footer-social--head, .contacts-item {
+    margin: auto;
+    margin-top: 0;
+}
+
+.working-mode {
+    display: grid;
+}
+
+.working-mode-days {
+    color: rgb(186, 247, 89);
+    text-shadow: 1px 1px 3px black;
+}
+
+.working-mode-hours {
+    color: #9bf5c8;
+    text-shadow: 1px 1px 3px black;
+}
+
+.working-mode-item {
+    width: auto;
+}
+
+.footer-social {
+    display: grid;
+    margin: 0;
+}
+
+.footer-social-item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto;
+    padding: 0;
+}
+
+.footer-social-list {
+    list-style: none;
+    padding: 15px;
+} 
+
+.contacts {
+    text-align: right;
+    padding: 0 20px;
+}
+
+.map-adres {
+    color: rgb(186, 247, 89);
+    text-shadow: 1px 1px 3px black;
+}
+
+.user-list__login-icon {
+    padding-right: 8px;
+}

@@ -1,0 +1,108 @@
+.container {
+    background-position-x: center;
+    background-position-y: 250px;
+    background-repeat: no-repeat;        
+    background-size: contain;
+}
+
+.services-and-workout, .simulators {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+}
+
+.services-and-workout-name, .simulators-name {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-top: 30px;
+    margin-bottom: 0;
+    padding: 5px;
+}
+
+.services-and-workout-item, .simulators-item {
+    display: grid;
+
+    padding: 15px;
+    text-align: left;
+    margin: 15px;
+    height: 400px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.services-and-workout--head, .simulators-item--head {
+    margin: 0;
+}
+
+.services-and-workout-item-block1 {
+    background-image: url('../img/workout1-1.jpg');
+}
+
+.services-and-workout-item-block2 {
+    background-image: url('../img/workout2.jpg');
+}
+
+.services-and-workout-item-block3 {
+    background-image: url('../img/workout3.jpg');
+}
+
+.services-and-workout-item-block4 {
+    background-image: url('../img/workout4.jpg');
+}
+
+.simulators-item-block1 {
+    background-image: url('../img/simulators1.jpg');
+}
+
+.simulators-item-block2 {
+    background-image: url('../img/simulators2.jpg');
+}
+
+.simulators-item-block3 {
+    background-image: url('../img/simulators3.jpg');
+}
+
+.simulators-item-block4 {
+    background-image: url('../img/simulators4.jpg');
+}
+
+.services-and-workout-list, .simulators-item-list {
+    list-style: none;
+    font-size: 20px;
+    line-height: 26px;
+    opacity: 0;
+    color: rgb(186, 247, 89);
+    padding: 0px;
+    text-shadow: 1px -1px 1px rgba(0, 0, 0, 1);
+}
+
+.services-and-workout-list:hover, .simulators-item-list:hover {
+opacity: 1;
+transition: 0.75s;
+}
+
+.experience {
+    display: grid;
+}
+
+.experience-item {
+    margin: 20px 0;
+}
+
+.experience-numbers {
+    text-align: center;
+    text-shadow: 1px 1px 3px black;
+    font-size: 52px;
+    line-height: 56px;
+    color: rgb(186, 247, 89);
+}
+
+.experience-text {
+    text-align: center;
+    text-shadow: 1px 1px 3px black;
+    font-size: 24px;
+    line-height: 30px;
+    color: #9bf5c8;
+}
