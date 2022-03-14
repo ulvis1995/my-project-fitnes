@@ -13,8 +13,7 @@
         <header class="page-header">
             <a class="page-header__logo" href="main.html">
                 <img src="../img/logo1.png" width="110px" height="110px" alt="Логотип фитнес-клуб «Life Style»"></a>
-                <nav class="main-nav main-nav--closed main-nav--nojs">
-                    <!-- <button class="button"><span class="visually-hidden">Открыть меню</span> </button> -->
+                <nav class="main-nav">
                     <div class="main-nav__wrapper">
                         <ul class="main-nav__list site-list">
                             <li class="site-list__item site-list__item--active">
@@ -22,7 +21,7 @@
                             </li>
                             <li class="site-list__item"><a href="membership.html">Абонементы и сертификаты</a></li>
                                 <li class="site-list__item"><a href="schedule.html">Расписание</a></li>
-                                <li class="site-list__item"><a href="treners.html">Тренеры</a></li>
+                                <li class="site-list__item"><a href="trainers.html">Тренеры</a></li>
                         </ul>
                         <ul class="main-nav__list user-list">
                             <li class="user-list__item">
@@ -94,7 +93,7 @@
                 <table class="experience-item">
                     <tr class="experience-numbers">
                         <td>8</td>
-                        <td>5</td>
+                        <td>9</td>
                         <td>1057</td>
                         <td>4.7</td>
                     </tr>
@@ -196,7 +195,7 @@
             </div>
         </footer>
         <div class="modal-overlay"></div>
-        <section class="login modal-login modal-show" id="login-modal">
+        <section class="login modal-login modal-show">
             <h2>Личный кабинет</h2>
             <p>Введите свой логин и пароль.</p>
             <form class="login-form" action="https://htmlacademy.ru" method="post">
@@ -221,7 +220,7 @@
             <button class="modal-close" type="button">Закрыть</button>
         </section>
 
-        <section class="map modal-map modal-show" id="map-modal">
+        <section class="map modal-map modal-show">
             <h2 class="visually-hidden">Как до нас добраться</h2>
 
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2243.9683762019454!2d49.14091845211689!3d55.776421080464154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x415eada646177d2b%3A0x79c2296d356249d6!2z0YPQuy4g0J_QtdGC0LXRgNCx0YPRgNCz0YHQutCw0Y8sIDEzOCwg0JrQsNC30LDQvdGMLCDQoNC10YHQvy4g0KLQsNGC0LDRgNGB0YLQsNC9LCA0MjAwNDk!5e0!3m2!1sru!2sru!4v1646321154338!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -232,7 +231,7 @@
             <button class="modal-close" type="button">Закрыть карту</button>
         </section>
         
-        <section class="promotion-call modal modal-show" id="phone-modal">
+        <section class="promotion-call modal modal-show">
             <button class="modal-close" type="button">Закрыть</button>
             <h2>Заказать звонок</h2>
                         <p class="promotion-text">Звонок специалиста поступит с 9:00 до 21:00 по московскому времени</p>
@@ -251,39 +250,7 @@
                         <button class="button" type="submit">Отправить</button>
                     </form>
         </section>
-
-        <script>
-            let modalOpenButton = document.querySelector('.promotion');
-            let modalOpenUser = document.querySelector('.user-list');
-            let login = document.querySelector('.modal-login');
-            let modal = document.querySelector('.promotion-call');
-            let overlay = document.querySelector('.modal-overlay');
-            let modalOpenMap = document.querySelector('.map-adres');
-            let map = document.querySelector('.modal-map');
-            modalOpenButton.addEventListener('click', function(e){
-                e.preventDefault();
-                modal.classList.add('active');
-                overlay.classList.add('active');
-            });
-            modalOpenUser.addEventListener('click', function(e){
-                e.preventDefault();
-                login.classList.add('active');
-                overlay.classList.add('active');
-            });
-            modalOpenMap.addEventListener('click', function(e){
-                e.preventDefault();
-                map.classList.add('active');
-                overlay.classList.add('active');
-            });
-            let modalClose = document.querySelectorAll('.modal-close')
-            modalClose.forEach(item => item.addEventListener('click', function(){
-                modal.classList.remove('active');
-                login.classList.remove('active');
-                map.classList.remove('active');
-                overlay.classList.remove('active');
-            }))
-        </script>
-
+        <script src="../js/script.js"></script>
     </body>
 </html>
 

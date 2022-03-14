@@ -14,7 +14,7 @@ body {
     font-style: normal;
     color: #fff;
     background: linear-gradient(to right, black, rgb(63, 62, 62), black);
-    max-width: 1200px;
+    width: 1200px;
     justify-content: space-between;
 }
 
@@ -86,5 +86,9 @@ img {
 
 .user-list__login {
     color: rgb(186, 247, 89);
+    text-shadow: 1px 1px 3px black;
+}
+.site-list__item--active a {
+    color: #9bf5c8;
     text-shadow: 1px 1px 3px black;
 }

@@ -1,0 +1,209 @@
+.membership-list, .gifts-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    padding: 0px;
+    
+}
+
+.membership-item, .gifts-item {
+    display: grid;
+    align-items: stretch;
+    font-size: 21px;
+    line-height: 24px;
+    text-align: center;
+    list-style: none;
+    padding: 10px;
+    background-color: rgba(160, 199, 199, 0.05);
+    box-shadow: 0 0 30px 10px rgba(255 , 255, 255, 0.5);
+}
+
+.membership-item h3, .gifts-item h3 {
+    min-height: 100px;
+    margin-bottom: 0;
+    color: #9bf5c8;
+}
+
+.membership-item-buy span {
+    font-size: 30px;
+    line-height: 36px;
+    color: #9bf5c8;
+    text-shadow: 1px 1px 5px black;
+}
+
+.membership-item-buy a {
+    text-shadow: 1px 1px 5px black;
+    font-style: bold;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#tagline {
+    display: inline;
+    font-size: smaller;
+    padding-left: 20px;
+    color: #9bf5c8;
+}
+
+.membership-item-time {
+    color: rgb(186, 247, 89);
+}
+
+.gifts-form {
+    background-color: rgba(160, 199, 199, 0.05);
+    box-shadow: 0 0 30px 10px rgba(255 , 255, 255, 0.5);
+    margin-bottom: 38px;
+    padding-bottom: 40px;
+}
+
+.gifts h2 {
+    display: inline;
+}
+
+.gifts-item h3 {
+    color: #fff;
+}
+
+.trainers-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    text-align: center;
+    padding: 0;
+}
+
+.trainer-item {
+    list-style: none;
+    background-color: rgba(160, 199, 199, 0.05);
+    box-shadow: 0 0 30px 10px rgba(255 , 255, 255, 0.3);
+}
+
+.trainer-item img {
+    padding-top: 30px;
+}
+
+.trainer-item:focus,
+.trainer-item:hover {
+    background-color: rgba(155, 245, 200, 0.7);
+    box-shadow: 0 0 60px 10px rgba(255 , 255, 255, 0.3);
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+.schedule {
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    color: rgb(252, 211, 122);
+    background: rgba(160, 199, 199, 0.05);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 3px solid white;
+    border-collapse: collapse;
+}
+
+.table-head {
+    background-color: rgba(255 , 255, 255, 0.3);
+}
+
+.schedule td {
+    padding: 3px;
+    border: 1px solid white;
+    width: 150px;
+    height: 50px;
+}
+
+.filters-timetable fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.filters-timetable legend {
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.filters-timetable button {
+    font-size: 18px;
+    line-height: 22px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+}
+
+.filters-teme {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.filter-way, .filter-classes {
+    width: 280px;
+    padding: 5px 10px;
+    background: linear-gradient(to top, rgba(134, 132, 132, 0.5), rgba(63, 62, 62, 0.5));
+    margin-bottom: 3px;
+}
+
+
+.filter {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.filter > input{
+    text-decoration: none;
+}
+
+.filter:hover, 
+.filter:focus {
+    color: #9bf5c8;    
+    text-shadow: 1px -1px 1px rgba(0, 0, 0, 1);
+}
+
+.filter input[type="checkbox"] + .checkmark {
+    display: inline-flex;
+    position: relative;
+    top: 0; 
+    left: 0;
+
+    width: 15px;
+    height: 15px;
+
+    border: 2px solid #c01919;
+    border-radius: 20%;
+}
+
+.filter input[type="checkbox"]:focus + .checkmark {
+    border-color: #db1515;
+    outline:  thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+}
+
+.filter input[type="checkbox"]:checked + .checkmark::before,
+.filter input[type="checkbox"]:checked + .checkmark::after {
+    content: "";
+
+    position: absolute;
+    top: 7px;
+    left: 1px;
+
+    width: 13px;
+    height: 2px;
+
+    background-color: #a11d3a;
+}
+
+.filter input[type="checkbox"]:checked + .checkmark::before {
+    transform: rotate(45deg);
+}
+
+.filter input[type="checkbox"]:checked + .checkmark::after {
+    transform: rotate(-45deg);
+}

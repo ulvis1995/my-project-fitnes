@@ -1,4 +1,4 @@
-.promotion-call {
+.promotion-call, .modal-login, .modal-map {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -28,32 +28,10 @@
 }
 
 .modal-login {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    background: #9fb3a8;
-    box-shadow: 0 0 60px 10px rgba(0, 0, 0, 0.9);
-
     width: 400px;
     max-width: 100%;
     height: 300px;
     max-height: 100%;
-
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
-    align-items: center;
-    
-    font-size:16px;
-    line-height: 20px;
-
-    z-index: 1010;
-
-    transition: 0.3s all;
-    opacity: 0;
-    visibility: hidden;
 }
 
 .modal-login p {
@@ -61,14 +39,6 @@
 }
 
 .modal-map {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    background: #9fb3a8;
-    box-shadow: 0 0 60px 10px rgba(0, 0, 0, 0.9);
-
     width: 600px;
     max-width: 100%;
     height: 450px;
@@ -76,10 +46,6 @@
     z-index: 1010;
 
     border: 7px solid white;
-
-    transition: 0.3s all;
-    opacity: 0;
-    visibility: hidden;
 }
 
 .modal-map p {
